@@ -54,22 +54,21 @@
             <br>Picture Gallery    
         </aside>
         </main>
-    </div>
-    <footer>  Asia Pacific College       </footer>
-
-    <div id="app">
-        {{ message }} <br>
-        {{'Random number: ' + Math.ceil(Math.random()*6) }}
-        <div v-bind:class="vueClass">This element is bound to the "pinkBG" class.
+        <footer>Asia Pacific College</footer>
+        <div id="app">
+            {{ message }} <br>
+            {{'Random number: ' + Math.ceil(Math.random()*6) }}
+            <div v-bind:class="vueClass">This element is bound to the "pinkBG" class.
+            </div>
         </div>
-    </div>
-    
-    <div id="app2">
-        <div>
-            <figure v-for="x in manyFoods">
-            <img v-bind:src="x.url">
-            <figcaption>{{ x.name }}</figcaption>
-            </figure>
+        
+        <div id="app2">
+            <div>
+                <figure v-for="x in manyFoods">
+                <img v-bind:src="x.url">
+                <figcaption>{{ x.name }}</figcaption>
+                </figure>
+            </div>
         </div>
     </div>
      
