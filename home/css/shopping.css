@@ -1,0 +1,27 @@
+#app3 {
+    border: dashed black 1px;
+    display: inline-block;
+    padding: 0 20px;
+  }
+  #app3 label, #app3 li {
+    padding: 5px;
+    border-radius: 5px;
+  }
+  #app3 label:hover, #app3 li:hover {
+    cursor: pointer;
+    background-color: lightgray;
+  }
+  ul {
+    list-style-type: none;
+  }
+  li {
+    margin: 2px;
+    background-color: rgb(211, 254, 211);
+  }
+  .impClass {
+    background-color: rgb(255, 202, 202);
+  }
+  #ulFound li {
+    text-decoration: line-through;
+    background-color: rgb(230,230,230);
+  }
