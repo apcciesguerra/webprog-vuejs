@@ -58,21 +58,21 @@
         <div id="app3">
             <form v-on:submit.prevent="addItem">
             <p>
-                  What do you need? <br>
-            <input type="text" required placeholder="item name.." v-model="itemName">
+                  Form Test <br>
+            <input type="text" required placeholder="TEST" v-model="itemName">
             </p>
             <p>
-                  How many? <br>
-            <input type="number" placeholder="number of items.." v-model="itemNumber">
+                  Number Form Test <br>
+            <input type="number" placeholder="TEST1" v-model="itemNumber">
             </p>
             <p>
-                  Important?
+                  Checkbox Test
             <label>
             <input type="checkbox" v-model="itemImportant">
                     {{ itemImportant }}
             </label>
             </p>
-            <button type="submit">Add item</button>
+            <button type="submit">Submit</button>
             </form>
             <br>
             <hr>
