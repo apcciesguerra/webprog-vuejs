@@ -1,6 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Funnel+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
 #app {
     display: inline-block;
     padding: 10px;
     font-size: x-large;
     background-color: lightgreen;
     }
+
+body {
+  background-color: #121212; 
+  color: #ffffff; 
+  font-family: "Funnel Sans", serif;
+  font-weight: 400; 
+  margin: 0;
+  padding: 0;
+}
