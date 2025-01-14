@@ -7,7 +7,11 @@ body {
   font-family: "Funnel Sans", serif;
   font-weight: 400; 
   margin: 0;
-  padding: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden; /* Prevents scrolling when content exceeds viewport */
 }
 
 .welcome-container {
