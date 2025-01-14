@@ -7,6 +7,7 @@ body {
   font-family: "Funnel Sans", serif;
   font-weight: 400; 
   margin: 0;
+  padding: 0;
   height: 100vh;
   display: flex;
   justify-content: center;
@@ -51,4 +52,17 @@ body.scrolled .welcome-text {
     opacity: 1;
     transform: translateY(0);
   }
+}
+
+/* Main Content */
+.main-content {
+  min-height: 100vh; /* Full viewport height */
+  padding: 50px;
+  background: #32CD32; /* Green background for contrast */
+  position: relative;
+  z-index: 0;
+}
+
+html {
+  scroll-behavior: smooth; /* Smooth scrolling effect */
 }
