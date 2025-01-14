@@ -28,8 +28,9 @@ body {
 }
 
 .welcome-text {
-  font-size: 3rem;
-  color: white;
+  font-size: 3rem; /* font size */
+  color: white; /* font color */
+  letter-spacing: 0.1em; /* spacing between letters */
   opacity: 0;
   transform: translateY(-20px);
   animation: fadeIn 2s forwards;
