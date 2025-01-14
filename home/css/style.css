@@ -2,7 +2,7 @@
 
 /* General Background Stuff */
 body {
-  background: linear-gradient(to bottom, #333, #121212); /* webpage bg color */
+  background: linear-gradient(to bottom, #121212, #333); /* webpage bg color */
   color: #FFC0CB; /* webpage font color */
   font-family: "Funnel Sans", serif;
   font-weight: 400; 
@@ -12,6 +12,17 @@ body {
   justify-content: center;
   align-items: center;
   overflow: hidden; /* Prevents scrolling when content exceeds viewport */
+}
+
+/* Splash Screen: Takes up the entire viewport initially */
+  .splash-screen {
+  height: 100vh; /* Full viewport height */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(to bottom, #333, #121212); /* Same gradient background */  
+  position: relative;
+  z-index: 1; /* Ensures it is on top of other content */
 }
 
 .welcome-container {
