@@ -20,7 +20,7 @@ body {
 }
 
 .welcome-text {
-  font-size: 3rem;
+  font-size: 70rem;
   color: white;
   opacity: 0;
   transform: translateY(-20px);
