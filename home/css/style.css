@@ -31,7 +31,7 @@ body {
 }
 
 .welcome-text {
-  font-size: 70rem;
+  font-size: 3rem;
   color: white;
   opacity: 0;
   transform: translateY(-20px);
