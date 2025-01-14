@@ -28,7 +28,7 @@ body {
 }
 
 .welcome-text {
-  font-size: 3rem; /* font size */
+  font-size: 8rem; /* font size */
   color: white; /* font color */
   letter-spacing: 0.1em; /* spacing between letters */
   opacity: 0;
