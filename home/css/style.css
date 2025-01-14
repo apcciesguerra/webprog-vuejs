@@ -1,10 +1,39 @@
 @import url('https://fonts.googleapis.com/css2?family=Funnel+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 
+/* General Background Stuff */
 body {
-  background-color: #121212; 
+  background: linear-gradient(to bottom, #333, #121212); /* webpage bg color */
   color: #FFC0CB; /* webpage font color */
   font-family: "Funnel Sans", serif;
   font-weight: 400; 
   margin: 0;
   padding: 0;
+}
+
+.welcome-container {
+  text-align: center;
+  overflow: hidden;
+}
+
+.welcome-text {
+  font-size: 3rem;
+  color: white;
+  opacity: 0;
+  transform: translateY(-20px);
+  animation: fadeIn 2s forwards;
+}
+
+/* Fade Out Effect */
+body.scrolled .welcome-text {
+  opacity: 0;
+  transform: translateY(-40px);
+  transition: opacity 1s, transform 1s;
+}
+
+/* Keyframes for Animation */
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
