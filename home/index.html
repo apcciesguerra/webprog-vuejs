@@ -9,90 +9,89 @@
     <link rel="stylesheet" href="css/shopping.css?version=0.1">  
 </head>
 <body>
-<div class="splash-screen">
-    <div class="welcome-container">
-        <h1 class="welcome-text">WELCOME TO MY WEBPAGE</h1>
-    </div>
-</div>
-
-<div class="main-content">
-    <div class="container">
-        <header>
-            <h1>Welcome</h1>
-          </header>
-        <main>
-          <section class="main-content">
-                   
-            <div>
-                <strong>About Me</strong>
-                <p>Hi! I am Christian Luis Esguerra<br>
-                a 2nd year Computer Science student from SS231.<br></p>
-            </div>
-            <div>
-                <strong>Education / Achievements</strong>
-                <p>Graduated Junior High School from Espiritu Santo Parochial School.<br>
-                Graduated Senior High School from Asia Pacific College.<br>
-                I've known basic html and css since we were taught that for 4 years in my JHS days<br></p>
-            </div>
-            <div>
-                <strong>Course</strong>
-                <p>BS Computer Science</p>
-            </div>
-            <div>
-                <strong>IT Experience</strong>
-                <p>HTML, CSS, JavaScript, Python</p>
-            </div>
-            <div>
-                <strong>Hobbies & Interests</strong>
-                <p>Going to the gym and playing video games</p>
-            </div>
-            <div>
-                <strong>Goals In Life / Dream</strong>
-                <p>Current goal is to be able to graduate.<br>
-                I like to only have short-term goals as it's easier for me to focus that way<br></p>
-            </div>
-            <div>
-                <strong>Picture Gallery</strong>
-                <img src="https://via.placeholder.com/382x384" alt="Photo of Christian" width="382" height="384">
-            </div>
-            
-            </section>
-          <aside class="sidebar">  Sidebar
-            <br>Picture Gallery    
-        </aside>
-        </main>
-        <footer>Asia Pacific College</footer>
-        
-        <div id="app3">
-            <form v-on:submit.prevent="addItem">
-            <p>
-                  Form Test <br>
-            <input type="text" required placeholder="TEST" v-model="itemName">
-            </p>
-            <p>
-                  Number Form Test <br>
-            <input type="number" placeholder="TEST1" v-model="itemNumber">
-            </p>
-            <p>
-                  Checkbox Test
-            <label>
-            <input type="checkbox" v-model="itemImportant">
-                    {{ itemImportant }}
-            </label>
-            </p>
-            <button type="submit">Submit</button>
-            </form>
-            <br>
-            <hr>
+    <!-- Splash Screen -->
+    <div class="splash-screen">
+        <div class="welcome-container">
+            <h1 class="welcome-text">WELCOME TO MY WEBPAGE</h1>
         </div>
-
     </div>
-</div>
-     
+
+    <!-- Main Content -->
+    <div class="main-content">
+        <div class="container">
+            <header>
+                <h1>Welcome</h1>
+            </header>
+            <main>
+                <section class="main-content-section">
+                    <div>
+                        <strong>About Me</strong>
+                        <p>Hi! I am Christian Luis Esguerra<br>
+                            a 2nd year Computer Science student from SS231.<br></p>
+                    </div>
+                    <div>
+                        <strong>Education / Achievements</strong>
+                        <p>Graduated Junior High School from Espiritu Santo Parochial School.<br>
+                            Graduated Senior High School from Asia Pacific College.<br>
+                            I've known basic HTML and CSS since we were taught that for 4 years in my JHS days<br></p>
+                    </div>
+                    <div>
+                        <strong>Course</strong>
+                        <p>BS Computer Science</p>
+                    </div>
+                    <div>
+                        <strong>IT Experience</strong>
+                        <p>HTML, CSS, JavaScript, Python</p>
+                    </div>
+                    <div>
+                        <strong>Hobbies & Interests</strong>
+                        <p>Going to the gym and playing video games</p>
+                    </div>
+                    <div>
+                        <strong>Goals In Life / Dream</strong>
+                        <p>Current goal is to be able to graduate.<br>
+                            I like to only have short-term goals as it's easier for me to focus that way<br></p>
+                    </div>
+                    <div>
+                        <strong>Picture Gallery</strong>
+                        <img src="https://via.placeholder.com/382x384" alt="Photo of Christian" width="382" height="384">
+                    </div>
+                </section>
+                <aside class="sidebar">
+                    Sidebar
+                    <br>Picture Gallery
+                </aside>
+            </main>
+            <footer>Asia Pacific College</footer>
+
+            <div id="app3">
+                <form v-on:submit.prevent="addItem">
+                    <p>
+                        Form Test <br>
+                        <input type="text" required placeholder="TEST" v-model="itemName">
+                    </p>
+                    <p>
+                        Number Form Test <br>
+                        <input type="number" placeholder="TEST1" v-model="itemNumber">
+                    </p>
+                    <p>
+                        Checkbox Test
+                        <label>
+                            <input type="checkbox" v-model="itemImportant">
+                            {{ itemImportant }}
+                        </label>
+                    </p>
+                    <button type="submit">Submit</button>
+                </form>
+                <br>
+                <hr>
+            </div>
+        </div>
+    </div>
+
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
     <script src="js/vue.js"></script>
     <script src="js/shopping.js"></script>
     <script src="js/script.js"></script>
-
 </body>
 </html>
