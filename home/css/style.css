@@ -103,14 +103,17 @@ html {
 /* Form Styling */
 #app3 form {
   background: rgba(0, 0, 0, 0.6); /* Transparent dark background */
-  color: #FFC0CB; /* Pink text */
+  color: #FFC0CB; /* font color */
+  align-items: center;
+  justify-content: center; 
   padding: 20px;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Depth effect */
+  
 }
 
 #app3 input, #app3 button {
-  font-family: "Funnel Sans", sans-serif; /* Match overall aesthetic */
+  font-family: "Funnel Sans", sans-serif; 
   font-size: 1rem;
   padding: 10px;
   margin: 10px 0;
