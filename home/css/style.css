@@ -63,12 +63,41 @@ body.scrolled .welcome-text {
 
 /* Main Content */
 .main-content {
-  padding: 50px;
-  background: #32CD32; /* Green background for contrast */
+  display: flex;
+  flex-direction: column; /* Stack cards vertically */
+  align-items: center; /* Horizontally center the cards */
+  justify-content: center; /* Vertically center the cards */
+  flex-wrap: wrap;
+
+  .main-content > div {
+      width: 300px;
+      margin: 10px;
+      text-align: center;
+      line-height: 35px;
+      font-size: 30px;
+    }
 }
 
 html {
   scroll-behavior: smooth; /* Smooth scrolling effect */
+}
+
+.card {
+  background: rgba(50, 50, 50, 0.8); /* Semi-transparent dark background */
+  color: #FFC0CB; /* Light pink text */
+  padding: 20px;
+  margin: 20px 0; /* Space between each card */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Subtle depth effect */
+  max-width: 800px; /* Limit width */
+  transition: opacity 1.5s ease, transform 1.5s ease ; /* Smooth fade and scale */
+  opacity: 0; /* Initially hidden */
+  transform: translateY(50px); /* Slight downward offset */
+}
+
+.card.show {
+  opacity: 1; /* Fully visible */
+  transform: translateY(0); /* Move to its final position */
 }
 
 /* Form Styling */
