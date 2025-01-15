@@ -3,7 +3,7 @@
 /* General Background Stuff */
 
 body {
-  background: linear-gradient(to bottom, #121212, #333); /* webpage bg color */
+  background: linear-gradient(to bottom, black, #662e92); /* webpage bg color */
   color: white; /* webpage font color */
   font-family: "Funnel Sans", serif;
   font-weight: 400;
@@ -13,23 +13,13 @@ body {
   overflow-x: hidden; /* Prevents horizontal scrolling */
 }
 
-header h1 {
-  font-size: 3rem; /* Match the welcome text size hierarchy */
-  font-weight: 700; /* Bold for emphasis */
-  text-transform: uppercase;
-  color: white;
-  text-align: center;
-  margin-bottom: 20px;
-  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* Subtle shadow */
-}
-
 /* Splash Screen: Takes up the entire viewport initially */
 .splash-screen {
   height: 100vh; /* Full viewport height */
   display: flex;
   justify-content: center;
   align-items: center;
-  background: linear-gradient(to bottom, #333, #121212);
+  background: linear-gradient(to bottom, #333, black);
 }
 
 .welcome-container {
@@ -78,13 +68,34 @@ body.scrolled .welcome-text {
     }
 }
 
+header h1 {
+  font-size: 3.5rem; /* Match the welcome text size hierarchy */
+  font-weight: 700; /* Bold for emphasis */
+  letter-spacing: 0.45em;
+  text-transform: uppercase;
+  color: white;
+  text-align: center;
+  margin-top: 70px;
+  margin-bottom: 50px;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* Subtle shadow */
+}
+
+strong {
+  text-transform: uppercase;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* Subtle shadow */
+}
+
+p {
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* Subtle shadow */
+}
+
 html {
   scroll-behavior: smooth; /* Smooth scrolling effect */
 }
 
 .card {
   background: rgba(50, 50, 50, 0.8); /* Semi-transparent dark background */
-  color: #FFC0CB; /* Light pink text */
+  color: white; /* Light pink text */
   padding: 20px;
   margin: 20px 0; /* Space between each card */
   border-radius: 8px; /* Rounded corners */
