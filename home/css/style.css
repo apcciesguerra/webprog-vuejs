@@ -1,9 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Funnel+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 
 /* General Background Stuff */
-
 body {
-  background: linear-gradient(to bottom, black, #662e92); /* webpage bg color */
+  background: #121212; /* webpage bg color */
   color: white; /* webpage font color */
   font-family: "Funnel Sans", serif;
   font-weight: 400;
@@ -19,7 +18,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: linear-gradient(to bottom, #333, black);
+  background: linear-gradient(to bottom, #333, #121212);
 }
 
 .welcome-container {
@@ -87,6 +86,7 @@ strong {
 
 p {
   text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* Subtle shadow */
+  font-size: 1.5rem;
 }
 
 html {
