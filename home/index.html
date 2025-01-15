@@ -32,8 +32,7 @@
                     <div class="card">
                         <strong>Education / Achievements</strong>
                         <p>Graduated Junior High School from Espiritu Santo Parochial School.<br>
-                            Graduated Senior High School from Asia Pacific College.<br>
-                            I've known basic HTML and CSS since we were taught that for 4 years in my JHS days<br></p>
+                            Graduated Senior High School from Asia Pacific College.<br></p>
                     </div>
                     <div class="card">
                         <strong>Course</strong>
@@ -58,31 +57,31 @@
                     </div>
                 </section>
             </main>
-            <footer>Asia Pacific College</footer>
-
-            <div id="app3">
-                <form v-on:submit.prevent="addItem">
-                    <p>
-                        Form Test <br>
-                        <input type="text" required placeholder="TEST" v-model="itemName">
-                    </p>
-                    <p>
-                        Number Form Test <br>
-                        <input type="number" placeholder="TEST1" v-model="itemNumber">
-                    </p>
-                    <p>
-                        Checkbox Test
-                        <label>
-                            <input type="checkbox" v-model="itemImportant">
-                            {{ itemImportant }}
-                        </label>
-                    </p>
-                    <button type="submit">Submit</button>
-                </form>
-                <br>
-                <hr>
-            </div>
         </div>
+
+        <div id="app3">
+            <form v-on:submit.prevent="addItem">
+                <p>
+                    Form Test <br>
+                    <input type="text" required placeholder="TEST" v-model="itemName">
+                </p>
+                <p>
+                    Number Form Test <br>
+                    <input type="number" placeholder="TEST1" v-model="itemNumber">
+                </p>
+                <p>
+                    Checkbox Test
+                    <label>
+                        <input type="checkbox" v-model="itemImportant">
+                        {{ itemImportant }}
+                    </label>
+                </p>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+
+        <footer>© Asia Pacific College 2025</footer>
+
     </div>
 
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
