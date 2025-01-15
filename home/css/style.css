@@ -4,13 +4,23 @@
 
 body {
   background: linear-gradient(to bottom, #121212, #333); /* webpage bg color */
-  color: #FFC0CB; /* webpage font color */
+  color: white; /* webpage font color */
   font-family: "Funnel Sans", serif;
   font-weight: 400;
   margin: 0;
   padding: 0;
   height: auto;
   overflow-x: hidden; /* Prevents horizontal scrolling */
+}
+
+header h1 {
+  font-size: 3rem; /* Match the welcome text size hierarchy */
+  font-weight: 700; /* Bold for emphasis */
+  text-transform: uppercase;
+  color: white;
+  text-align: center;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* Subtle shadow */
 }
 
 /* Splash Screen: Takes up the entire viewport initially */
@@ -59,4 +69,33 @@ body.scrolled .welcome-text {
 
 html {
   scroll-behavior: smooth; /* Smooth scrolling effect */
+}
+
+/* Form Styling */
+#app3 form {
+  background: rgba(0, 0, 0, 0.6); /* Transparent dark background */
+  color: #FFC0CB; /* Pink text */
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Depth effect */
+}
+
+#app3 input, #app3 button {
+  font-family: "Funnel Sans", sans-serif; /* Match overall aesthetic */
+  font-size: 1rem;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 5px;
+  border: none;
+}
+
+#app3 button {
+  background: #FFC0CB; /* Pink button */
+  color: #333; /* Dark text for contrast */
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+#app3 button:hover {
+  background: #FF69B4; /* Darker pink on hover */
 }
