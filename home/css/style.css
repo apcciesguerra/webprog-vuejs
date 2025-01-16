@@ -57,29 +57,25 @@ body.scrolled .welcome-text {
   align-items: center; /* Horizontally center the cards */
   justify-content: center; /* Vertically center the cards */
   flex-wrap: wrap;
-
-  .main-content > div {
-      width: 300px;
-      margin: 10px;
-      text-align: center;
-      line-height: 35px;
-      font-size: 30px;
-    }
 }
+
+
 
 header h1 {
   font-size: 3.5rem; /* Match the welcome text size hierarchy */
   font-weight: 700; /* Bold for emphasis */
-  letter-spacing: 0.45em;
+  letter-spacing: 0.3em;
+  line-height: 2.5; /* Space between lines */
   text-transform: uppercase;
   color: white;
   text-align: center;
   margin-top: 70px;
-  margin-bottom: 160px;
+  margin-bottom: 180px;
   text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* Subtle shadow */
 }
 
 strong {
+  font-size: 30px;
   text-transform: uppercase;
   text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* Subtle shadow */
 }
@@ -93,53 +89,6 @@ html {
   scroll-behavior: smooth; /* Smooth scrolling effect */
 }
 
-.card {
-  background: rgba(50, 50, 50, 0.8); /* Semi-transparent dark background */
-  color: white; /* Light pink text */
-  padding: 20px;
-  margin: 20px 0; /* Space between each card */
-  border-radius: 8px; /* Rounded corners */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Subtle depth effect */
-  width: 100%;
-  max-width: 800px; /* Limit width */
-  transition: opacity 1.5s ease, transform 1.5s ease ; /* Smooth fade and scale */
-  opacity: 0; /* Initially hidden */
-  transform: translateY(50px); /* Slight downward offset */
-}
-
-.card.show {
-  opacity: 1; /* Fully visible */
-  transform: translateY(0); /* Move to its final position */
-}
-
-/* Form Styling */
-#app3 form {
-  background: rgba(0, 0, 0, 0.6); /* Transparent dark background */
-  color: #662e92; /* font color */
-  align-items: center;
-  justify-content: center; 
-  padding: 20px;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Depth effect */
-  
-}
-
-#app3 input, #app3 button {
-  font-family: "Funnel Sans", sans-serif; 
-  font-size: 1rem;
-  padding: 10px;
-  margin: 10px 0;
-  border-radius: 5px;
-  border: none;
-}
-
-#app3 button {
-  background: #662e92; /* Pink button */
-  color: black; /* Dark text for contrast */
-  cursor: pointer;
-  transition: background 0.3s ease;
-}
-
-#app3 button:hover {
-  background: white; /* Darker pink on hover */
+footer {
+  margin-bottom: 25px;
 }
