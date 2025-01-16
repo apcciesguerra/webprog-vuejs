@@ -108,3 +108,10 @@ footer {
 .slider-button:hover {
   background: #c185ee; 
 }
+
+.slider img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
