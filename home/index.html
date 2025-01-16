@@ -55,7 +55,10 @@
                     </div>
                     <div class="card">
                         <strong>Picture Gallery</strong>
-                        <img src="https://via.placeholder.com/382x384" alt="Photo of Christian" width="382" height="384">
+                        <div id="app">
+                            <slider>
+                            </slider>
+                        </div>
                     </div>
                 </section>
             </main>
@@ -63,19 +66,19 @@
 
         <div id="app3">
             <form v-on:submit.prevent="addItem">
+                <strong>Suggestion Box</strong>
                 <p>
-                    Suggestion Box <br>
-                    <input type="text" required placeholder="Any suggestions for my website?" v-model="itemName">
+                    Any suggestions for my website?
+                    <input type="text" required placeholder="Input here!" v-model="itemName">
                 </p>
-
                 <p>
                     Confirm
                     <label>
                         <input type="checkbox" v-model="itemImportant">
-                        {{ itemImportant }}
+                        {{ itemImportantDisplay }}
                     </label>
                 </p>
-                <button type="submit">Submit</button>
+                <button type="submit">SUBMIT</button>
             </form>
         </div>
 
@@ -84,6 +87,7 @@
     </div>
 
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
     <script src="js/vue.js"></script>
     <script src="js/form.js"></script>
     <script src="js/script.js"></script>
