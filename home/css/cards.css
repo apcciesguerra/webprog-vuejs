@@ -1,0 +1,27 @@
+/* Cards Styling */
+.card {
+  background: #323232cc; /* Semi-transparent dark background */
+  color: white; 
+  text-align: center;
+  padding: 20px;
+  margin: 20px 0; /* Space between each card */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Subtle depth effect */
+  width: 65%;
+  max-width: 1200px; /* Limit width */
+  transition: opacity 1.5s ease, transform 1.5s ease, box-shadow 0.5s ease, background 0.5s ease; /* Smooth fade and scale */
+  opacity: 0; /* Initially hidden */
+  position: relative;
+  transform: translateY(50px); /* Slight downward offset */
+}
+
+.card.show {
+  opacity: 1; /* Fully visible */
+  transform: translateY(0); /* Move to its final position */
+}
+
+/* Cards Glow Effect testing */
+.card:hover {
+  box-shadow: 0 0 20px #662e95; /* Glowing border */
+  background: #442a58; /* background */
+}
