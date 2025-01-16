@@ -75,7 +75,7 @@ header h1 {
   color: white;
   text-align: center;
   margin-top: 70px;
-  margin-bottom: 50px;
+  margin-bottom: 160px;
   text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* Subtle shadow */
 }
 
@@ -100,6 +100,7 @@ html {
   margin: 20px 0; /* Space between each card */
   border-radius: 8px; /* Rounded corners */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Subtle depth effect */
+  width: 100%;
   max-width: 800px; /* Limit width */
   transition: opacity 1.5s ease, transform 1.5s ease ; /* Smooth fade and scale */
   opacity: 0; /* Initially hidden */
@@ -114,7 +115,7 @@ html {
 /* Form Styling */
 #app3 form {
   background: rgba(0, 0, 0, 0.6); /* Transparent dark background */
-  color: #FFC0CB; /* font color */
+  color: #662e92; /* font color */
   align-items: center;
   justify-content: center; 
   padding: 20px;
@@ -133,12 +134,12 @@ html {
 }
 
 #app3 button {
-  background: #FFC0CB; /* Pink button */
-  color: #333; /* Dark text for contrast */
+  background: #662e92; /* Pink button */
+  color: black; /* Dark text for contrast */
   cursor: pointer;
   transition: background 0.3s ease;
 }
 
 #app3 button:hover {
-  background: #FF69B4; /* Darker pink on hover */
+  background: white; /* Darker pink on hover */
 }
