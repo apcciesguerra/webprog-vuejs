@@ -10,17 +10,3 @@
     cursor: pointer;
     background-color: lightgray;
   }
-  ul {
-    list-style-type: none;
-  }
-  li {
-    margin: 2px;
-    background-color: rgb(211, 254, 211);
-  }
-  .impClass {
-    background-color: rgb(255, 202, 202);
-  }
-  #ulFound li {
-    text-decoration: line-through;
-    background-color: rgb(230,230,230);
-  }
