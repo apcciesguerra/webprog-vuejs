@@ -1,0 +1,57 @@
+#app3 {
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  text-transform: uppercase; /* Uppercase text */
+}
+
+/* Form Styling */
+#app3 label, #app3 li {
+  padding: 5px; /* Adds padding inside each label and list item */
+  border-radius: 5px; /* Rounds the corners of each label and list item */
+}
+#app3 label:hover, #app3 li:hover {
+  cursor: pointer; /* Changes the cursor to a pointer when hovering over labels and list items */
+}
+
+/* Form Styling */
+#app3 form {
+  background: rgba(0, 0, 0, 0.6); /* Transparent dark background */
+  color: #662e92; /* font color */
+  font-weight: 700; /* Bold font */
+  align-items: center;
+  justify-content: center; 
+  text-align: center;
+  margin: 60px 0;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Depth effect */
+  
+}
+
+#app3 input, #app3 button {
+  font-family: "Funnel Sans", sans-serif; 
+  font-size: 1.2rem;
+  padding: 15px;
+  margin: 10px 0;
+  border-radius: 5px;
+  border: none;
+}
+
+#app3 input[type="text"] {
+  text-transform: none; /* Exclude input text from being uppercase */
+  width: 100%; /* Adjust width as needed */
+  padding: 10px; /* Adjust padding as needed */
+  box-sizing: border-box;
+}
+
+#app3 button {
+  background: white; 
+  color: black; /* Dark text for contrast */
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+#app3 button:hover {
+  background: #c185ee; 
+}

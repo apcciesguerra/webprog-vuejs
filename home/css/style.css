@@ -1,6 +1,117 @@
-#app {
-    display: inline-block;
-    padding: 10px;
-    font-size: x-large;
-    background-color: lightgreen;
-    }
+@import url('https://fonts.googleapis.com/css2?family=Funnel+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+/* General Background Stuff */
+body {
+  background: #121212; /* webpage bg color */
+  color: white; /* webpage font color */
+  font-family: "Funnel Sans", serif;
+  font-weight: 400;
+  margin: 0;
+  padding: 0;
+  height: auto;
+  overflow-x: hidden; /* Prevents horizontal scrolling */
+}
+
+/* Splash Screen: Takes up the entire viewport initially */
+.splash-screen {
+  height: 100vh; /* Full viewport height */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(to bottom, #333, #121212);
+}
+
+.welcome-container {
+  text-align: center;
+  overflow: hidden;
+}
+
+.welcome-text {
+  font-size: 8rem; /* font size */
+  color: white; /* font color */
+  letter-spacing: 0.075em; /* spacing between letters */
+  opacity: 0;
+  transform: translateY(-20px);
+  animation: fadeIn 2s forwards;
+}
+
+/* Fade Out Effect */
+body.scrolled .welcome-text {
+  opacity: 0;
+  transform: translateY(-40px);
+  transition: opacity 1s, transform 1s;
+}
+
+/* Keyframes for Animation */
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Main Content */
+.main-content {
+  display: flex;
+  flex-direction: column; /* Stack cards vertically */
+  align-items: center; /* Horizontally center the cards */
+  justify-content: center; /* Vertically center the cards */
+  flex-wrap: wrap;
+}
+
+header h1 {
+  font-size: 3.5rem; /* Match the welcome text size hierarchy */
+  font-weight: 700; /* Bold for emphasis */
+  letter-spacing: 0.3em;
+  line-height: 2.5; /* Space between lines */
+  text-transform: uppercase;
+  color: white;
+  text-align: center;
+  margin-top: 70px;
+  margin-bottom: 180px;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* Subtle shadow */
+}
+
+strong {
+  font-size: 30px;
+  text-transform: uppercase;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* Subtle shadow */
+}
+
+p {
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* Subtle shadow */
+  font-size: 1.5rem;
+}
+
+html {
+  scroll-behavior: smooth; /* Smooth scrolling effect */
+}
+
+footer {
+  margin-bottom: 25px;
+}
+
+/* Picture Gallery Button Styling */
+.slider-button {
+  font-family: "Funnel Sans", sans-serif; 
+  font-size: 1.2rem;
+  padding: 15px;
+  margin: 10px 0;
+  border-radius: 5px;
+  border: none;
+  background: white; 
+  color: black; /* Dark text for contrast */
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.slider-button:hover {
+  background: #c185ee; 
+}
+
+.slider img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}

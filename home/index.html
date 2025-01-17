@@ -1,129 +1,91 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>My first Vue page</title>
-<link rel="stylesheet" href="css/style.css">
-<link rel="stylesheet" href="css/flexbox-grid.css?version=0.1">
-<link rel="stylesheet" href="css/bind.css?version=0.1">  
-<link rel="stylesheet" href="css/images.css?version=0.1">  
-<link rel="stylesheet" href="css/shopping.css?version=0.1">  
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>**EXPERIMENTAL COPY**</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/cards.css">
+    <link rel="stylesheet" href="css/form.css?version=0.1">  
+    <script src="https://unpkg.com/vue@3"></script> 
 </head>
 <body>
-
-    <div class="container">
-        <header>
-            <h1>Christian Luis Esguerra</h1>
-          </header>
-        <main>
-          <section class="main-content">
-                   
-            <div>
-                <strong>About Me</strong>
-                <p>I don't drink or smoke or go to clubs or party.<br>
-                I'm the type of person who'd rather sleep early and wake up early,<br>
-                hit the gym, eat some good food, and be with family and friends :><br></p>
-            </div>
-            <div>
-                <strong>Education / Achievements</strong>
-                <p>Graduated Senior High School from Asia Pacific College.<br>
-                As for achievements, I don't really have any notable ones.<br></p>
-            </div>
-            <div>
-                <strong>Course</strong>
-                <p>BS Computer Science</p>
-            </div>
-            <div>
-                <strong>IT Experience</strong>
-                <p>A beginner who is somewhat familiar with the basics of HTML and CSS.</p>
-            </div>
-            <div>
-                <strong>Hobbies & Interests</strong>
-                <p>Going to the gym and playing video games on my PC.</p>
-            </div>
-            <div>
-                <strong>Goals In Life / Dream</strong>
-                <p>Current goal is to be able to graduate.<br>
-                I like to only have short-term goals as it's easier for me to focus that way.<br></p>
-            </div>
-            <div>
-                <strong>Picture Gallery</strong>
-                <img src="https://via.placeholder.com/382x384" alt="Photo of Christian" width="382" height="384">
-            </div>
-            
-            </section>
-          <aside class="sidebar">  Sidebar
-            <br>Picture Gallery    
-        </aside>
-        </main>
-        <footer>Asia Pacific College</footer>
-        <div id="app">
-            {{ message }} <br>
-            {{'Random number: ' + Math.ceil(Math.random()*6) }}
-            <div v-bind:class="vueClass">This element is bound to the "pinkBG" class.
-            </div>
+    <!-- Splash Screen -->
+    <div class="splash-screen">
+        <div class="welcome-container">
+            <h1 class="welcome-text">WELCOME TO MY WEBPAGE</h1>
         </div>
-        
-        <div id="app2">
-            <div>
-                <figure v-for="x in manyFoods">
-                <img v-bind:src="x.url">
-                <figcaption>{{ x.name }}</figcaption>
-                </figure>
-            </div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="main-content">
+        <div class="container">
+            <header>
+                <h1>Christian Luis Esguerra<br>
+                    ComSci Student</h1>
+            </header>
+            <main>
+                <section class="main-content">
+                    <div class="card">
+                        <strong>About Me</strong>
+                        <p>Hi! I'm Christian,<br>
+                            a 2nd year Computer Science student from Asia Pacific College,<br>
+                            from section SS231.</p>
+                    </div>
+                    <div class="card">
+                        <strong>Education / Achievements</strong>
+                        <p>Graduated Junior High School from Espiritu Santo Parochial School.<br>
+                            Graduated Senior High School from Asia Pacific College.<br></p>
+                    </div>
+                    <div class="card">
+                        <strong>Course</strong>
+                        <p>BS Computer Science</p>
+                    </div>
+                    <div class="card">
+                        <strong>IT Experience</strong>
+                        <p>HTML, CSS, JavaScript, Python</p>
+                    </div>
+                    <div class="card">
+                        <strong>Hobbies & Interests</strong>
+                        <p>Going to the gym and playing video games</p>
+                    </div>
+                    <div class="card">
+                        <strong>Goals In Life / Dream</strong>
+                        <p>Current goal is to be able to graduate.<br>
+                        I like to only have short-term goals as it's easier for me to focus that way<br></p>
+                    </div>
+                    <div class="card">
+                        <strong>Picture Gallery</strong>
+                        <div id="app">
+                            <slider>
+                            </slider>
+                        </div>
+                    </div>
+                </section>
+            </main>
         </div>
 
         <div id="app3">
             <form v-on:submit.prevent="addItem">
-            <p>
-                  What do you need? <br>
-            <input type="text" required placeholder="item name.." v-model="itemName">
-            </p>
-            <p>
-                  How many? <br>
-            <input type="number" placeholder="number of items.." v-model="itemNumber">
-            </p>
-            <p>
-                  Important?
-            <label>
-            <input type="checkbox" v-model="itemImportant">
-                    {{ itemImportant }}
-            </label>
-            </p>
-            <button type="submit">Add item</button>
+                <strong>Suggestion Box</strong>
+                <p>
+                    Any suggestions for my website?
+                    <input type="text" required placeholder="Input here!" v-model="itemName">
+                </p>
+                <p>
+                    Confirm
+                    <label>
+                        <input type="checkbox" v-model="itemImportant">
+                    </label>
+                </p>
+                <button type="submit">SUBMIT</button>
             </form>
-            <br>
-            <hr>
-             
-              <div>
-            <p><strong>Shopping list:</strong></p>
-            <ul id="ulToFind">
-            <li 
-                    v-for="item in shoppingList" 
-                    v-bind:class="{ impClass: item.important }"
-                    v-on:click="item.found=!item.found"
-                    v-show="!item.found">
-                      {{ item.name }}, {{ item.number}}
-            </li>
-            </ul>
-            <ul id="ulFound">
-            <li 
-                    v-for="item in shoppingList" 
-                    v-bind:class="{ impClass: item.important }"
-                    v-on:click="item.found=!item.found"
-                    v-show="item.found">
-                      {{ item.name }}, {{ item.number}}
-            </li>
-            </ul>
-            </div>
-            </div>
+        </div>
+
+        <footer>© Asia Pacific College 2025</footer>
 
     </div>
-     
-    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
     <script src="js/vue.js"></script>
-    <script src="js/images.js"></script>
-    <script src="js/shopping.js"></script>
-
-
+    <script src="js/script.js"></script>
 </body>
 </html>
