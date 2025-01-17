@@ -5,13 +5,13 @@ const Slider = defineComponent({
         return {
             currentSlide: 0,
             images: [
-                { src: 'https://github.com/apcciesguerra/webprog-vuejs/blob/2_CLIE_experimental/images/photo1.jpg?raw=true'},
-                { src: 'https://github.com/apcciesguerra/webprog-vuejs/blob/2_CLIE_experimental/images/photo2.jpg?raw=true'},
-                { src: 'https://github.com/apcciesguerra/webprog-vuejs/blob/2_CLIE_experimental/images/photo3.jpg?raw=true'},
-                { src: 'https://github.com/apcciesguerra/webprog-vuejs/blob/2_CLIE_experimental/images/photo4.jpg?raw=true'},
-                { src: 'https://github.com/apcciesguerra/webprog-vuejs/blob/2_CLIE_experimental/images/photo5.jpg?raw=true'},
-                { src: 'https://github.com/apcciesguerra/webprog-vuejs/blob/2_CLIE_experimental/images/photo6.jpg?raw=true'},
-                { src: 'https://github.com/apcciesguerra/webprog-vuejs/blob/2_CLIE_experimental/images/photo7.jpg?raw=true'}
+                { src: 'https://github.com/apcciesguerra/webprog-vuejs/blob/main/images/photo1.jpg?raw=true'},
+                { src: 'https://github.com/apcciesguerra/webprog-vuejs/blob/main/images/photo2.jpg?raw=true'},
+                { src: 'https://github.com/apcciesguerra/webprog-vuejs/blob/main/images/photo3.jpg?raw=true'},
+                { src: 'https://github.com/apcciesguerra/webprog-vuejs/blob/main/images/photo4.jpg?raw=true'},
+                { src: 'https://github.com/apcciesguerra/webprog-vuejs/blob/main/images/photo5.jpg?raw=true'},
+                { src: 'https://github.com/apcciesguerra/webprog-vuejs/blob/main/images/photo6.jpg?raw=true'},
+                { src: 'https://github.com/apcciesguerra/webprog-vuejs/blob/main/images/photo7.jpg?raw=true'}
             ]
         };
     },
