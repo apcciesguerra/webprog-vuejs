@@ -1,5 +1,6 @@
 <template>
 
+<div class="container">
 <h1>Christian Esguerra</h1>
 
 <p>
@@ -39,6 +40,7 @@
 <p>
  <br><h3>Picture Gallery</h3>    
 </p>
+</div>
 
 </template>
 <script></script>
