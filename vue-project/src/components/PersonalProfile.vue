@@ -38,7 +38,6 @@
 
 <p>
  <br><h3>Picture Gallery</h3>    
- <br><img src="photoofme.jpg" alt="Photo of Christian" width="382" height="384">
 </p>
 
 </template>
