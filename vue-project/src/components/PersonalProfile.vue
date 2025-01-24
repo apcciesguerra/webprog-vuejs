@@ -1,8 +1,8 @@
 <template>
 
 <div class="container">
-<h1>Christian Esguerra</h1>
 
+<h1>Christian Esguerra</h1>
 <p>
 <br><h3>About Me</h3>  
  <br>I don't drink or smoke or go to clubs or party
@@ -40,8 +40,10 @@
 <p>
  <br><h3>Picture Gallery</h3>    
 </p>
+
 </div>
 
 </template>
+
 <script></script>
 <style></style>
