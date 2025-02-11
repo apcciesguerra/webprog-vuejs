@@ -12,5 +12,6 @@
     <food-item2/> <br>
     <food-item/> <br>
     <food-item2/> <br>
+    <rest-api/> <br>
     
   </template>
